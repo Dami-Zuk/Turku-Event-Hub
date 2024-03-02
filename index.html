@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="/styles/styles.css" rel="stylesheet">
     <title>Turku Event Hub - What's poppin Turku?</title>
 </head>
 <body>
@@ -12,14 +13,14 @@
     <div style="background-color: #FFCF54;">
     <nav id="header" class="navbar container-xl" aria-label="header">
         <!-- Logo -->
-        <div id="logo">
+        <div id="logo" class="ml-2">
           <a class="navbar-brand" href="/">
             <img class="img-fluid" src="assets\TEH_logo_brown.png" alt="Turku Event Hub" width="240" height="60">
           </a>
         </div>
         <!--Search bar - unfinished -->
-        <div id="search bar">
-            <input type="text"/>
+        <div id="search bar" class="">
+            <input type="text" class=""/>
             
         </div>
         <!-- Login - unfinished -->
@@ -29,39 +30,126 @@
     </nav>
     </div>
 
-<main>
+
     <!-- Calendar + Event proposal grid -->
     <section id="calendar_overlay">
     <div class="container-xl py-5">
-        <div class="row justify-content-between align-items-center">
-            <div class="row justify-content-around">
-                <div class="col-5">
-                  <img id="calendar" src="/assets/calendar.png" alt="calendar image" class="rounded float-start shadow-lg img-fluid" 
-                  style="width: 490px;">
-                </div>
-                <div class="col-5">
-                  <img id="ruisrock" src="/assets/ruisrock.png" alt="ruisrock image" class="rounded float-end shadow-lg img-fluid" 
-                  style="width: 485px;">
-                </div>
-            </div>           
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col-7 col-lg-6 col-xl-6">
+                <img id="calendar" src="/assets/calendar.png" alt="calendar image" class="rounded float-start shadow-lg img-fluid" 
+                style="width: 490px;">
+            </div>
+            <div class="col-7 col-lg-6 col-xl-6">
+                <img id="ruisrock" src="/assets/ruisrock.png" alt="ruisrock image" class="rounded float-end shadow-lg img-fluid" 
+                style="width: 485px;">
+            </div>          
         </div>
     </div>
     </section>
 
 
     <!-- Middle bar with event types -->
-    <section id="middle_bar">
+    <section class="middle_navbar mt-3">
+        <div style="background-color: #FFCF54;">
+            <nav class="navbar container-xl" aria-label="event types">
+                <ul class="container-xl justify-content-between mx-5 my-auto py-1 list-group-horizontal">
+                    <li class="list-group-item">
+                        <button type="button" class="btn btn-light rounded-pill">All</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" class="btn btn-light rounded-pill">Sport</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" class="btn btn-light rounded-pill">Concerts</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" class="btn btn-light rounded-pill">Movie</button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" class="btn btn-light rounded-pill">Theater</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
+    <!-- Grid: first row of 3 events -->
+    <section id="events_grid" class="mt-5">
+        <div class="row my-5 align-items-center justify-content-center">
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card mx-3">
+                    <img src="/assets/dune_2.png" class="card-img-top" alt="event picture">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Dune 2</h2>
+                        <p class="lead card-subtitle">drama, adventure</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card mx-3">
+                    <img src="/assets/kungfupanda.png" class="card-img-top" alt="event picture">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Kung Fu Panda 4</h2>
+                        <p class="lead card-subtitle">family, animation</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card mx-3">
+                    <img src="/assets/bobmarley.png" class="card-img-top" alt="event picture">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Bob Marley: One Love</h2>
+                        <p class="lead card-subtitle">drama, biography, music</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second row of 3 events-->
+        <div class="row my-5 align-items-center justify-content-center">
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card mx-3">
+                    <img src="/assets/turningred.png" class="card-img-top" alt="event picture">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Turning Red</h2>
+                        <p class="lead card-subtitle">family, animation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card mx-3">
+                    <img src="/assets/argylle2.png" class="card-img-top" alt="event picture">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Argylle</h2>
+                        <p class="lead card-subtitle">comedy, action</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card mx-3">
+                    <img src="/assets/apes.png" class="card-img-top" alt="event picture">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Kingdom of the Planet of the Apes</h2>
+                        <p class="lead card-subtitle">action, adventure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
 
+<!-- Load More button-->
+    <div class="middle_navbar container-xl d-flex justify-content-center">
+        <button type="button" class="btn btn-light rounded-pill border border-secondary">Load more</button>
+    </div>
 
 
 
-</main>
     
 
 

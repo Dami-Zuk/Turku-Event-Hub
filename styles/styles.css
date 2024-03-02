@@ -1,17 +1,18 @@
-/* CSS and Bootstrap styles for Turku Event Hub */
+/* CSS styles for Turku Event Hub */
 
-/* Header */
-header {
-position: absolute;
-width: 1440px;
-height: 85px;
-left: 0px;
-top: 0px;
-background-color: #FFCF54
-}
-/* Logo */
-logo {
-
+/* Font colour */
+body {
+    color: #442900 !important;
 }
 
+.btn-light {
+    color: #442900;
+    background-color: white;
 
+}
+.middle_navbar div nav ul li button {
+    width: 10rem;
+}
+#event-grid {
+    color: #442900;
+}
