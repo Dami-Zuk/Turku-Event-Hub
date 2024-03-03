@@ -1,18 +1,154 @@
 /* CSS styles for Turku Event Hub */
 
+/* Google font for Judson */
+.judson-regular {
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.judson-bold {
+  font-family: "Judson", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.judson-regular-italic {
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 /* Font colour */
-body {
-    color: #442900 !important;
+main {
+  color: #442900 !important;
+  font-family: "Judson", serif;
+}
+
+#header {
+  background-color: #ffcf54;
 }
 
 .btn-light {
-    color: #442900;
-    background-color: white;
+  color: #442900;
+  background-color: white;
+}
 
+.middle_navbar {
+  background-color: #ffcf54;
 }
+
 .middle_navbar div nav ul li button {
-    width: 10rem;
+  width: 10rem;
 }
+
 #event-grid {
-    color: #442900;
+  color: #442900;
+}
+
+/* Cards styles */
+.card a:link {
+  text-decoration: none;
+  color: #442900;
+}
+
+.card a:visited {
+  text-decoration: none;
+  color: #442900;
+}
+
+.card a:active {
+  text-decoration: none;
+  color: #442900;
+}
+
+.card-body h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80wv;
+}
+
+/* Subscribe section */
+.subscribe {
+  background: #eeeff3;
+  height: 448px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-bg {
+  background-image: url("../assets/subscribe-side.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-bg {
+  background-image: url("../assets/contact-side.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-group {
+  min-width: 100px;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  height: 49px;
+}
+
+.input-group input {
+  border-radius: 60px;
+  border-color: #442900;
+  color: #442900;
+}
+
+.input-group button {
+  border-radius: 60px;
+  border-color: #442900;
+  background-color: #442900;
+  color: #fff;
+}
+
+.container form h2 {
+  margin-bottom: 22px;
+}
+
+/* Subscribe Right Section */
+.contact-items {
+  margin: 15px 0px 15px 0px;
+}
+
+.contact-bg {
+  /* height: 100vh; */
+  background-image: url("../assets/contact-side.png");
+  /* background-size: 10px; */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #442900;
+  font-size: 22px;
+}
+
+.contact-item a:hover {
+  color: rgb(233, 211, 19);
+}
+
+/* Footer */
+footer {
+  background-color: #ffcf54;
+}
+
+.social-media {
+  margin: 10px 0 10px 0;
+  justify-content: center;
+}
+
+.social-media a {
+  margin: 0 10px 0 10px;
 }
