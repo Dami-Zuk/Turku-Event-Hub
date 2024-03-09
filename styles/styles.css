@@ -26,7 +26,7 @@ main {
 }
 
 #header {
-  background-color: #ffcf54;
+  background-color: #FFCF54;
 }
 
 .btn-light {
@@ -35,7 +35,7 @@ main {
 }
 
 .middle_navbar {
-  background-color: #ffcf54;
+  background-color: #FFCF54;
 }
 
 .middle_navbar div nav ul li button {
@@ -47,6 +47,10 @@ main {
 }
 
 /* Cards styles */
+.card {
+  text-decoration: none;
+  color: #442900;
+}
 .card a:link {
   text-decoration: none;
   color: #442900;
@@ -66,12 +70,12 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 80wv;
+  max-width: 80vw;
 }
 
 /* Subscribe section */
 .subscribe {
-  background: #eeeff3;
+  background: #EEEFF3;
   height: 448px;
   display: flex;
   justify-content: space-between;
@@ -81,7 +85,7 @@ main {
 .sub-bg {
   background-image: url("../assets/subscribe-side.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:contain;
 }
 
 .contact-bg {
@@ -151,4 +155,23 @@ footer {
 
 .social-media a {
   margin: 0 10px 0 10px;
+}
+
+/* Event page: event image with info card on the left */
+.event-img-bg {
+  background-image: url(../assets/movies//dune_2.png);
+  background-size: cover;
+  background-position: center;
+  height: 445px;
+}
+
+.event-card-img {
+  height: 75px;
+  width: 75px;
+  margin: 20px 0px 0px 0px;
+}
+
+.list-group-item {
+  text-decoration: none;
+  color: #442900;
 }
