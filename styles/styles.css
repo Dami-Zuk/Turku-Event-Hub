@@ -32,6 +32,7 @@ main {
 .btn-light {
   color: #442900;
   background-color: white;
+  width: 10vw
 }
 
 .middle_navbar {
@@ -165,6 +166,10 @@ footer {
   height: 445px;
 }
 
+.card-margin {
+  margin-top: 40px;
+}
+
 .event-card-img {
   height: 75px;
   width: 75px;
@@ -174,5 +179,46 @@ footer {
 .list-group-item {
   text-decoration: none;
   color: #442900;
+}
+
+.schedule-bg {
+  background: #EEEFF3;
+  height: 530px;
+}
+
+.cinema-margins {
+  margin: 0vw 0vw 0vw 3vw;
+}
+
+.btn-light-2 {
+  border-color: #442900;
+  background-color: #fff;
+  width: 8vw
+}
+
+.btn-light-2:hover {
+  border-color: #442900;
+  color: #442900;
+  background-color: rgba(215, 208, 208, 0.30);
+  transition-property: background-color;
+}
+
+.btn-light-3 {
+  color: #442900;
+  background-color: white;
+  width: 5vw;
+  margin-left: 6vw;
+}
+
+.btn-light-3:hover {
+  color: #442900;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition-property: background-color;
+}
+
+.line-style {
+  width: 90%;
+  border: 2px solid white;
+  opacity: 100%;
 }
 

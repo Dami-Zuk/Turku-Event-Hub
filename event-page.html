@@ -52,13 +52,12 @@
       </div>
 
       <!-- Event image with information card on the left side -->
-      <div id="info-card" class="container-xl rounded-5 event-img-bg mt-4 py-4">
-        <div class="card mx-3 my-auto opacity-75 rounded-5" style="width: 20rem;">
+      <div id="info-card" class="container-xl rounded-5 event-img-bg my-4">
+        <div class="card mx-3 opacity-75 rounded-5 py-2" style="width: 20rem;">
           <img src="assets/icons/movie-icon.png" class="card-img-top event-card-img mx-auto mt-5" alt="Movie"/>
           <div class="card-body text-center py-5">
-            <p class="lead card-text">Movie</p>
-            <br>
-            <h2 class="card-title">Dune: Part Two</h2>
+            <p class="lead card-text mt-3">Movie</p>
+            <h2 class="card-title"><strong>Dune: Part Two</strong></h2>
             <p class="lead card-subtitle">Drama, Adventure</p>
           </div>
         </div>
@@ -66,7 +65,7 @@
 
       <!-- Details of the event -->
       <div id="event-details" class="container-xl">
-        <h2 class="text-center my-4">Details</h2>
+        <h2 class="text-center my-4"><strong>Details</strong></h2>
         <p id="event-desc" class="lead">This follow-up film will explore the mythic journey of Paul Atreides as he unites with Chani 
           and the Fremen while on a path of revenge against the conspirators who destroyed his family. 
           Facing a choice between the love of his life and the fate of the known universe, he endeavors 
@@ -76,11 +75,11 @@
         <div class="row my-5">
           <div class="col-2">
             <ul class="list-group list-group-flush lead">
-              <li class="list-group-item">Release date:</li>
-              <li class="list-group-item">Length:</li>
-              <li class="list-group-item">Distributor</li>
-              <li class="list-group-item">Director</li>
-              <li class="list-group-item">Cast:</li>
+              <li class="list-group-item fw-bold">Release date:</li>
+              <li class="list-group-item fw-bold">Length:</li>
+              <li class="list-group-item fw-bold">Distributor:</li>
+              <li class="list-group-item fw-bold">Director</li>
+              <li class="list-group-item fw-bold">Cast:</li>
             </ul>
           </div>
           <div class="col-10">
@@ -99,9 +98,15 @@
 
       <!-- Event schedule -->
       <div id="event-schedule" class="container-xl">
-        <h2 class="text-center">Schedule</h2>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <h2 class="text-center"><strong>Schedule</strong></h2>
+
+        <!-- Dropdown buttons -->
+        <div class="btn-group my-4" role="group" aria-label="dropdown buttons">
+          <button 
+          class="btn btn-light btn-light-2 dropdown-toggle rounded-pill" 
+          type="button" 
+          data-bs-toggle="dropdown" 
+          aria-expanded="false">
             Today
           </button>
           <ul class="dropdown-menu">
@@ -109,23 +114,80 @@
             <li><a class="dropdown-item" href="#">Tomorrow</a></li>
             <li><a class="dropdown-item" href="#">In 2 days</a></li>
           </ul>
+          <button 
+          class="btn btn-light btn-light-2 dropdown-toggle rounded-pill mx-5" 
+          type="button" 
+          data-bs-toggle="dropdown" 
+          aria-expanded="false">
+            Cinema
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Raisio LUXE Mylly</a></li>
+            <li><a class="dropdown-item" href="#">Turku Kinopalatsi</a></li>
+          </ul>
+        </div>
+
+        <!-- Event listing: row 1 -->
+        <div class="schedule-bg rounded-4 my-4">
+          <div class="row justify-content-center">
+            <div class="col-4 my-5">
+              <h3 class="cinema-margins">LUXE Mylly, Raisio</h3>
+              <p class="cinema-margins">Language: English | Subtitles: Finnish, Swedish</p>
+            </div>
+            <div class="col-8 my-5">
+              <div class="btn-group mx-3" role="group" aria-label="screen times">
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill">17:00</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">21:00</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">other</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">other</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">other</button>
+              </div>
+            </div>
+            <hr class="line-style rounded-pill"/>
+          </div>
+
+          <!-- Event listing: row 2 -->
+          <div class="row justify-content-center">
+            <div class="col-4 my-5">
+              <h3 class="cinema-margins">LUXE Mylly, Raisio</h3>
+              <p class="cinema-margins">Language: English | Subtitles: Finnish, Swedish</p>
+            </div>
+            <div class="col-8 my-5">
+              <div class="btn-group mx-3" role="group" aria-label="screen times">
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill">17:00</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">21:00</button>
+              </div>
+            </div>
+            <hr class="line-style rounded-pill"/>
+          </div>
+
+          <!-- Event listing: row 3 -->
+          <div class="row justify-content-center">
+            <div class="col-4 my-5">
+              <h3 class="cinema-margins">LUXE Mylly, Raisio</h3>
+              <p class="cinema-margins">Language: English | Subtitles: Finnish, Swedish</p>
+            </div>
+            <div class="col-8 my-5">
+              <div class="btn-group mx-3" role="group" aria-label="screen times">
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill">17:00</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">21:00</button>
+              </div>
+            </div>
+            <hr class="line-style rounded-pill"/>
+          </div>
         </div>
       </div>
 
-
-
-
-
-      <!-- Subscribe section-->
+      <!-- Subscribe section -->
       <div class="subscribe d-flex justify-content-between align-items-center mt-5">
         <div class="container text-center">
-          <!-- Subscribe Left Section-->
+          <!-- Subscribe Left Section -->
           <div class="row">
             <div class="col sub-bg">
               <form>
                 <h2>SUBSCRIBE FOR OUR NEWSLETTER</h2>
                 <div class="input-group mb-3">
-                  <!-- Complete "action" when PHP is released-->
+                  <!-- Complete "action" when PHP is released -->
                   <input
                     method="post"
                     action=""
@@ -146,7 +208,7 @@
               </form>
             </div>
             <div class="col contact-bg">
-              <!-- Subscribe right section-->
+              <!-- Subscribe right section -->
               <div class="row contact-items">
                 <div class="col">
                   <div class="contact-item"><a href="">Contact </a></div>
@@ -165,11 +227,10 @@
       </div>
     </main>
     
-    <!-- Footer-->
+    <!-- Footer -->
     <footer>
       <div
-        class="container-fluid footer d-flex justify-content-between align-items-center"
-      >
+        class="container-fluid footer d-flex justify-content-between align-items-center">
         <div id="logo">
           <a class="navbar-brand" href="/">
             <img
