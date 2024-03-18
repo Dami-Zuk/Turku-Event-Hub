@@ -166,10 +166,6 @@ footer {
   height: 445px;
 }
 
-.card-margin {
-  margin-top: 40px;
-}
-
 .event-card-img {
   height: 75px;
   width: 75px;
@@ -203,14 +199,32 @@ footer {
   transition-property: background-color;
 }
 
-.btn-light-3 {
+.btn-light-2:focus {
+  border-color: #442900;
   color: #442900;
-  background-color: white;
-  width: 5vw;
-  margin-left: 6vw;
+  background-color: rgba(215, 208, 208, 0.30);
+  transition-property: background-color;
 }
 
-.btn-light-3:hover {
+.btn-light-2:active {
+  border-color: #442900;
+  color: #442900;
+  background-color: #fff;
+  transition-property: background-color;
+}
+
+.item-style {
+  color: #442900;
+  background-color: #fff;
+  width: 5vw;
+  height: 50px;
+  text-align: center;
+  font-size: 22px;
+  padding: 8px;
+  margin: vw; /* need to play with it */
+}
+
+.item-style:hover {
   color: #442900;
   background-color: rgba(255, 255, 255, 0.75);
   transition-property: background-color;
@@ -221,4 +235,14 @@ footer {
   border: 2px solid white;
   opacity: 100%;
 }
+
+.dropdown-item {
+  color: #442900;
+}
+
+.dropdown-item:active {
+  color: #442900;
+  background-color: rgba(215, 208, 208, 0.30);
+}
+
 
