@@ -1,17 +1,248 @@
-/* CSS and Bootstrap styles for Turku Event Hub */
+/* CSS styles for Turku Event Hub */
 
-/* Header */
-header {
-position: absolute;
-width: 1440px;
-height: 85px;
-left: 0px;
-top: 0px;
-background-color: #FFCF54
+/* Google font for Judson */
+.judson-regular {
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-/* Logo */
-logo {
 
+.judson-bold {
+  font-family: "Judson", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.judson-regular-italic {
+  font-family: "Judson", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Font colour */
+main {
+  color: #442900 !important;
+  font-family: "Judson", serif;
+}
+
+#header {
+  background-color: #FFCF54;
+}
+
+.btn-light {
+  color: #442900;
+  background-color: white;
+  width: 10vw
+}
+
+.middle_navbar {
+  background-color: #FFCF54;
+}
+
+.middle_navbar div nav ul li button {
+  width: 10rem;
+}
+
+#event-grid {
+  color: #442900;
+}
+
+/* Cards styles */
+.card {
+  text-decoration: none;
+  color: #442900;
+}
+.card a:link {
+  text-decoration: none;
+  color: #442900;
+}
+
+.card a:visited {
+  text-decoration: none;
+  color: #442900;
+}
+
+.card a:active {
+  text-decoration: none;
+  color: #442900;
+}
+
+.card-body h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80vw;
+}
+
+/* Subscribe section */
+.subscribe {
+  background: #EEEFF3;
+  height: 448px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-bg {
+  background-image: url("../assets/subscribe-side.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+.contact-bg {
+  background-image: url("../assets/contact-side.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-group {
+  min-width: 100px;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  height: 49px;
+}
+
+.input-group input {
+  border-radius: 60px;
+  border-color: #442900;
+  color: #442900;
+}
+
+.input-group button {
+  border-radius: 60px;
+  border-color: #442900;
+  background-color: #442900;
+  color: #fff;
+}
+
+.container form h2 {
+  margin-bottom: 22px;
+}
+
+/* Subscribe Right Section */
+.contact-items {
+  margin: 15px 0px 15px 0px;
+}
+
+.contact-bg {
+  /* height: 100vh; */
+  background-image: url("../assets/contact-side.png");
+  /* background-size: 10px; */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #442900;
+  font-size: 22px;
+}
+
+.contact-item a:hover {
+  color: rgb(233, 211, 19);
+}
+
+/* Footer */
+footer {
+  background-color: #ffcf54;
+}
+
+.social-media {
+  margin: 10px 0 10px 0;
+  justify-content: center;
+}
+
+.social-media a {
+  margin: 0 10px 0 10px;
+}
+
+/* Event page: event image with info card on the left */
+.event-img-bg {
+  background-image: url(../assets/movies//dune_2.png);
+  background-size: cover;
+  background-position: center;
+  height: 445px;
+}
+
+.event-card-img {
+  height: 75px;
+  width: 75px;
+  margin: 20px 0px 0px 0px;
+}
+
+.list-group-item {
+  text-decoration: none;
+  color: #442900;
+}
+
+.schedule-bg {
+  background: #EEEFF3;
+  height: 530px;
+}
+
+.cinema-margins {
+  margin: 0vw 0vw 0vw 3vw;
+}
+
+.btn-light-2 {
+  border-color: #442900;
+  background-color: #fff;
+  width: 8vw
+}
+
+.btn-light-2:hover {
+  border-color: #442900;
+  color: #442900;
+  background-color: rgba(215, 208, 208, 0.30);
+  transition-property: background-color;
+}
+
+.btn-light-2:focus {
+  border-color: #442900;
+  color: #442900;
+  background-color: rgba(215, 208, 208, 0.30);
+  transition-property: background-color;
+}
+
+.btn-light-2:active {
+  border-color: #442900;
+  color: #442900;
+  background-color: #fff;
+  transition-property: background-color;
+}
+
+.item-style {
+  color: #442900;
+  background-color: #fff;
+  width: 5vw;
+  height: 50px;
+  text-align: center;
+  font-size: 22px;
+  padding: 8px;
+  margin: vw; /* need to play with it */
+}
+
+.item-style:hover {
+  color: #442900;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition-property: background-color;
+}
+
+.line-style {
+  width: 90%;
+  border: 2px solid white;
+  opacity: 100%;
+}
+
+.dropdown-item {
+  color: #442900;
+}
+
+.dropdown-item:active {
+  color: #442900;
+  background-color: rgba(215, 208, 208, 0.30);
 }
 
 
