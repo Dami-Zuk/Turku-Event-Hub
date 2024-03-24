@@ -26,7 +26,7 @@
         <nav class="navbar container-xl" aria-label="header">
 
           <!-- Logo -->
-          <div id="logo" class="ml-2">
+          <div id="logo" class="">
             <a class="navbar-brand" href="/">
               <img
                 class="img-fluid"
@@ -40,21 +40,22 @@
 
           <!--Search bar -->
           <div class="d-flex align-items-center">
-            <input type="text" class="form-control rounded-pill" placeholder="Search" aria-label="search" aria-describedby="search bar" style="width: 20vw;">
+            <input type="text" class="form-control rounded-pill search-style" placeholder="Search" aria-label="search" 
+            aria-describedby="search bar">
             <a class="mx-3" href="#"><img src="assets/icons/search-icon.png"/></a>
           </div>          
 
           <!-- Login button -->
-          <div id="login_button" class="px4">
+          <div id="login_button" class="">
             <a href="#"><img src="assets/icons/login.png"/></a>
           </div>
         </nav>
       </div>
 
       <!-- Event image with information card on the left side -->
-      <div id="info-card" class="container-xl rounded-5 event-img-bg my-4">
-        <div class="card mx-3 opacity-75 rounded-5 py-2" style="width: 20rem;">
-          <img src="assets/icons/movie-icon.png" class="card-img-top event-card-img mx-auto mt-5" alt="Movie"/>
+      <div id="info-card" class="container-xl rounded-5 event-img-bg mt-4">
+        <div class="card opacity-75 rounded-5 event-card-pos ms-4 py-4" style="width: 20rem;">
+          <img src="assets/icons/movie-icon.png" class="card-img-top event-card-img mx-auto mt-4" alt="Movie"/>
           <div class="card-body text-center py-5">
             <p class="lead card-text mt-3">Movie</p>
             <h2 class="card-title"><strong>Dune: Part Two</strong></h2>
@@ -131,59 +132,60 @@
         <div class="schedule-bg rounded-4 my-4">
           <div class="row justify-content-center">
             <div class="col-4 my-5">
-              <h3 class="cinema-margins">LUXE Mylly, Raisio</h3>
+              <h3 class="cinema-margins mt-1">LUXE Mylly, Raisio</h3>
               <p class="cinema-margins">Language: English | Subtitles: Finnish, Swedish</p>
             </div>
             <div class="col-8 my-5">
-              <div class="list-group list-group-horizontal mx-5" role="group" aria-label="screen times">
-                <li class="list-group-item rounded-pill item-style ms-5">17:00</li>
-                <li class="list-group-item rounded-pill item-style ms-5">21:00</li>
-                <li class="list-group-item rounded-pill item-style ms-5">other</li>
-                <li class="list-group-item rounded-pill item-style ms-5">other</li>
-                <li class="list-group-item rounded-pill item-style ms-5">other</li>
+              <div class="btn-group ms-5 mt-1" role="group" aria-label="screen times">
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill">17:00</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">21:00</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">other</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">other</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">other</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">other</button>
               </div>
             </div>
             <hr class="line-style rounded-pill"/>
           </div>
 
           <!-- Event listing: row 2 -->
-          <div class="row justify-content-center">
-            <div class="col-4 my-5">
+          <div class="row justify-content-center my-4">
+            <div class="col-4 mt-2">
               <h3 class="cinema-margins">LUXE Mylly, Raisio</h3>
               <p class="cinema-margins">Language: English | Subtitles: Finnish, Swedish</p>
             </div>
-            <div class="col-8 my-5">
-              <div class="list-group list-group-horizontal mx-5" role="group" aria-label="screen times">
-                <li class="list-group-item rounded-pill item-style ms-5">17:00</li>
-                <li class="list-group-item rounded-pill item-style ms-5">21:00</li>
+            <div class="col-8 mt-2">
+              <div class="btn-group ms-5" role="group" aria-label="screen times">
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill">17:00</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">21:00</button>
               </div>
             </div>
-            <hr class="line-style rounded-pill"/>
+            <hr class="line-style rounded-pill mt-5"/>
           </div>
 
           <!-- Event listing: row 3 -->
-          <div class="row justify-content-center">
-            <div class="col-4 my-5">
+          <div class="row justify-content-center my-4">
+            <div class="col-4 mt-2">
               <h3 class="cinema-margins">LUXE Mylly, Raisio</h3>
               <p class="cinema-margins">Language: English | Subtitles: Finnish, Swedish</p>
             </div>
-            <div class="col-8 my-5">
-              <div class="list-group list-group-horizontal mx-5" role="group" aria-label="screen times">
-                <li class="list-group-item rounded-pill item-style ms-5">17:00</li>
-                <li class="list-group-item rounded-pill item-style ms-5">21:00</li>
+            <div class="col-8 mt-2">
+              <div class="btn-group ms-5" role="group" aria-label="screen times">
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill">17:00</button>
+                <button type="button" class="btn btn-light-3 btn-lg rounded-pill ms-5">21:00</button>
               </div>
             </div>
-            <hr class="line-style rounded-pill"/> <!-- test-->
+            <hr class="line-style rounded-pill mt-5"/>
           </div>
         </div>
       </div>
 
       <!-- Subscribe section -->
       <div class="subscribe d-flex justify-content-between align-items-center mt-5">
-        <div class="container text-center">
+        <div class="container-xl text-center">
           <!-- Subscribe Left Section -->
           <div class="row">
-            <div class="col sub-bg">
+            <div class="col-6 sub-bg">
               <form>
                 <h2>SUBSCRIBE FOR OUR NEWSLETTER</h2>
                 <div class="input-group mb-3">
@@ -207,10 +209,10 @@
                 </div>
               </form>
             </div>
-            <div class="col contact-bg">
+            <div class="col-6">
               <!-- Subscribe right section -->
               <div class="row contact-items">
-                <div class="col">
+                <div class="col contact-bg">
                   <div class="contact-item"><a href="">Contact </a></div>
                   <div class="contact-item"><a href="">About</a></div>
                   <div class="contact-item"><a href="">For media</a></div>
@@ -230,7 +232,7 @@
     <!-- Footer -->
     <footer>
       <div
-        class="container-fluid footer d-flex justify-content-between align-items-center">
+        class="container-xl footer d-flex justify-content-between align-items-center">
         <div id="logo">
           <a class="navbar-brand" href="/">
             <img

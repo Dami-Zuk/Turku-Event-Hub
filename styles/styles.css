@@ -29,10 +29,21 @@ main {
   background-color: #FFCF54;
 }
 
+.search-style {
+  width: 20vw; 
+  height: 45px;
+}
+
 .btn-light {
   color: #442900;
   background-color: white;
   width: 10vw
+}
+
+.btn-light:hover {
+  color: #442900;
+  background-color: rgba(226, 221, 221, 0.75);
+  transition-property: background-color;
 }
 
 .middle_navbar {
@@ -83,10 +94,12 @@ main {
   align-items: center;
 }
 
+/* for Subscribe section backgrounds the ::after or ::before pseudo-elements should be used to position them, tricky */
 .sub-bg {
+  content: "";
   background-image: url("../assets/subscribe-side.png");
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
 }
 
 .contact-bg {
@@ -169,9 +182,11 @@ footer {
 .event-card-img {
   height: 75px;
   width: 75px;
-  margin: 20px 0px 0px 0px;
 }
 
+.event-card-pos {
+  top: 32px;
+}
 .list-group-item {
   text-decoration: none;
   color: #442900;
@@ -213,18 +228,20 @@ footer {
   transition-property: background-color;
 }
 
-.item-style {
+.btn-light-3 {
   color: #442900;
   background-color: #fff;
-  width: 5vw;
-  height: 50px;
   text-align: center;
-  font-size: 22px;
-  padding: 8px;
-  margin: vw; /* need to play with it */
+  font-size: 20px;
 }
 
-.item-style:hover {
+.btn-light-3:hover {
+  color: #442900;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition-property: background-color;
+}
+
+.btn-light-3:focus {
   color: #442900;
   background-color: rgba(255, 255, 255, 0.75);
   transition-property: background-color;

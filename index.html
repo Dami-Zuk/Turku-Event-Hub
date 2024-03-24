@@ -25,7 +25,7 @@
         <nav class="navbar container-xl" aria-label="header">
 
           <!-- Logo -->
-          <div id="logo" class="ml-2">
+          <div id="logo" class="">
             <a class="navbar-brand" href="/">
               <img
                 class="img-fluid"
@@ -39,7 +39,8 @@
 
           <!--Search bar -->
           <div class="d-flex align-items-center">
-            <input type="text" class="form-control rounded-pill" placeholder="Search" aria-label="search" aria-describedby="search bar" style="width: 20vw;">
+            <input type="text" class="form-control rounded-pill search-style" placeholder="Search" aria-label="search" 
+            aria-describedby="search bar">
             <a class="mx-3" href="#"><img src="assets/icons/search-icon.png"/></a>
           </div>          
 
@@ -78,39 +79,15 @@
 
       <!-- Middle bar with event types -->
       <section class="middle_navbar mt-3">
-        <div>
-          <nav class="navbar container-xl" aria-label="event types">
-            <ul
-              class="container-xl justify-content-between mx-5 my-auto py-1 list-group-horizontal"
-            >
-              <li class="list-group-item">
-                <button type="button" class="btn btn-light rounded-pill">
-                  All
-                </button>
-              </li>
-              <li class="list-group-item">
-                <button type="button" class="btn btn-light rounded-pill">
-                  Sport
-                </button>
-              </li>
-              <li class="list-group-item">
-                <button type="button" class="btn btn-light rounded-pill">
-                  Concerts
-                </button>
-              </li>
-              <li class="list-group-item">
-                <button type="button" class="btn btn-light rounded-pill">
-                  Movie
-                </button>
-              </li>
-              <li class="list-group-item">
-                <button type="button" class="btn btn-light rounded-pill">
-                  Theater
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="navbar" aria-label="event types">
+          <div class="container-xl d-flex justify-content-between my-1">
+            <button type="button" role="group" class="btn btn-light btn-light-3 rounded-pill ms-2">All</button>
+            <button type="button" role="group" class="btn btn-light btn-light-3 rounded-pill ms-2">Sport</button>
+            <button type="button" role="group" class="btn btn-light btn-light-3 rounded-pill">Concerts</button>
+            <button type="button" role="group" class="btn btn-light btn-light-3 rounded-pill">Movie</button>
+            <button type="button" role="group" class="btn btn-light btn-light-3 rounded-pill">Theater</button>
+          </div>
+        </nav>
       </section>
 
       <!-- Grid: first row of 3 events -->
@@ -278,7 +255,7 @@
     <!-- Footer-->
     <footer>
       <div
-        class="container-fluid footer d-flex justify-content-between align-items-center"
+        class="container-xl footer d-flex justify-content-between align-items-center"
       >
         <div id="logo">
           <a class="navbar-brand" href="/">

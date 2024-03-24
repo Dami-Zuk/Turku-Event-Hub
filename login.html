@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+        GENERAL NOTES
+    REPLACE ALL THE BRs!!!!!!!!!!!!
+    -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous"
+        />
+        <link href="styles/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet"
+        />
+        <title>Turku Event Hub - What's poppin Turku?</title>
+    </head>
+<body>
+        <!-- Header -->
+<div style="background-color: #FFCF54;">
+    <nav id="header" class="navbar container-xl" aria-label="header">
+                <!-- Logo -->
+        <div id="logo">
+            <a class="navbar-brand" href="/">
+            <img class="img-fluid" src="TEH_logo_brown.png" alt="Turku Event Hub" width="240" height="60">
+            </a>
+        </div>
+</nav>
+</div>
+
+<main>
+                <!--text-->
+    <center><font size="4"> <br><br>
+        <h3><div style='color: #442900; font-size: 35px; font-family: Judson;'>Log In</h3>
+            <h2 style='color: #442900; font-size: 20px; font-family: Judson;'>Log In to Turku Event Hub</h2></div>
+
+<!--registration-->
+    <section id="inputs">
+        <form action="dobre pytanie" method="POST">
+            <label for="email"style='color: #442900; font-size: 20px; font-family: Judson;'> Email</label> <br>
+            <input type="text" name="email" id="email" minlength="5" maxlength="30" required style="width: 340px; height: 3vw;"><br><br>
+
+            <label for="password" style='color: #442900; font-size: 20px; font-family: Judson;'> Password</label> <br>
+            <input type="password" name="log_in" id="password" minlength="8" maxlength="200" required style="width: 340px; height: 3vw;"><br><br>
+
+            <!-- do i want to name all 3 inputs the same so that they get grouped together?-->
+            <a href="#" type="button" class="btn btn-link">Forgotten your password?</a> <br>
+
+            <label for="stay_logged" style='color: #442900; font-size: 20px; font-family: Judson;'>Stay logged in?</label>
+            <input type="checkbox" name="stay_logged" id="stay_logged"><br>
+
+            <!-- submit btn--><br>
+        <input type="submit" value="Log In" href="#" class="btn btn-light rounded-pill" style='color :#442900; font-family: Judson;'>
+    </form>
+    </section>
+    </font></center>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</main>
+</html>
